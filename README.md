@@ -20,6 +20,13 @@ Este projeto foi desenvolvido para simular a lógica de um sistema real de chama
 * **Interface (CLI):** Uso de códigos de escape ANSI para limpeza de tela nativa.
 
 ## 🛠️ Como executar
+
+### Pré-requisitos
+* Ter um compilador C++ instalado na sua máquina.
+  * **Linux:** GCC (`g++`).
+  * **Windows:** MinGW-w64 (via MSYS2) adicionado às variáveis de ambiente (PATH).
+
+### 🐧 Executando no Linux / macOS
 1. Clone este repositório.
 2. Compile o arquivo utilizando o G++ no terminal:
    ```bash
