@@ -20,7 +20,20 @@ Este projeto foi desenvolvido para simular a lógica de um sistema real de chama
 * **Interface (CLI):** Uso de códigos de escape ANSI para limpeza de tela nativa.
 
 ## 🛠️ Como executar
+
+### Pré-requisitos
+* Ter um compilador C++ instalado na sua máquina.
+  * **Linux:** GCC (`g++`).
+  * **Windows:** MinGW-w64 (via MSYS2) adicionado às variáveis de ambiente (PATH).
+
+### 🐧 Executando no Linux / macOS
 1. Clone este repositório.
 2. Compile o arquivo utilizando o G++ no terminal:
    ```bash
    g++ sistema_senhas.cpp -o senhas
+   
+### 🪟 Executando no Windows
+1. Clone este repositório e abra a pasta do projeto no terminal (Prompt de Comando ou terminal do VS Code).
+2. Compile o código para gerar um arquivo executável `.exe`:
+   ```powershell
+   g++ sistema_senhas.cpp -o senhas.exe
