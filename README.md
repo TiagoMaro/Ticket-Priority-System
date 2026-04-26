@@ -31,3 +31,9 @@ Este projeto foi desenvolvido para simular a lógica de um sistema real de chama
 2. Compile o arquivo utilizando o G++ no terminal:
    ```bash
    g++ sistema_senhas.cpp -o senhas
+   
+### 🪟 Executando no Windows
+1. Clone este repositório e abra a pasta do projeto no terminal (Prompt de Comando ou terminal do VS Code).
+2. Compile o código para gerar um arquivo executável `.exe`:
+   ```powershell
+   g++ sistema_senhas.cpp -o senhas.exe
