@@ -190,6 +190,7 @@ void cancelarSenha()
         cout << "\n[ERRO] Senha não encontrada na fila atual.\n";
     }
 }
+
 void estatisticas()
 {
     cout << "\n--- ESTATISTICAS DO SISTEMA ---\n";
