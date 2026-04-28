@@ -8,7 +8,7 @@
 
 using namespace std;
 
-const int MAX = 200;
+const int MAX = 10;
 
 struct Cliente
 {
@@ -125,9 +125,10 @@ void chamarSenha()
     tamFila--;
     clientesAtendidos++;
 
-    cout << "\n========================================\n";
-    cout << "   CHAMANDO SENHA: " << chamado.senha << "\n";
-    cout << "   CLIENTE: " << chamado.nome << "\n";
+    cout << "\n========================================" << endl;
+    cout << "   CHAMANDO SENHA: " << chamado.senha << endl;
+    cout << "   CLIENTE: " << chamado.nome << endl;
+    cout << "   HORA DE ENTRADA: " << formatarHora(chamado.hora_entrada) << endl;
     cout << "========================================\n";
 }
 
@@ -207,8 +208,8 @@ int main()
         cout << "\n=== SISTEMA DE GERENCIAMENTO DE FILAS ===\n";
         cout << "1. Emitir Nova Senha" << endl;
         cout << "2. Chamar Cliente" << endl;
-        cout << "3. Exibir Fila de Espera" << endl;
-        cout << "4. Cancelar Senha" << endl;
+        cout << "3. Cancelar Senha" << endl;
+        cout << "4. Exibir Fila de Espera" << endl;
         cout << "5. Exibir Estatisticas" << endl;
         cout << "6. Sair do Sistema" << endl;
         cout << "Escolha uma opcao: ";
@@ -221,6 +222,8 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
             cout << "\n[ERRO] Entrada invalida! Por favor, digite apenas numeros.\n";
+            cin.get();
+            system("clear");
             continue;
         }
 
@@ -235,11 +238,11 @@ int main()
             break;
 
         case 3:
-            exibirFila();
+            cancelarSenha();
             break;
 
         case 4:
-            cancelarSenha();
+            exibirFila();
             break;
 
         case 5:
@@ -248,6 +251,7 @@ int main()
 
         case 6:
             cout << "Encerrando atendimentos." << endl;
+            system("clear");
             break;
 
         default:
